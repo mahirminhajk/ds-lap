@@ -1,0 +1,1 @@
+//*implement polynomial using arrays
