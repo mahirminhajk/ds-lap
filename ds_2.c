@@ -2,15 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void display(char array[10][30], int size)
-{
-    int i;
-    for (i = 0; i < size; i++)
-    {
-        printf("%s, ", array[i]);
-    }
-    printf("\n");
-}
+void display(char str[10][30], int size);
 
 void main()
 {
@@ -45,4 +37,14 @@ void main()
 
     printf("The sorted array: ");
     display(str, size);
+}
+
+void display(char str[10][30], int size)
+{
+    int i;
+    for (i = 0; i < size; i++)
+    {
+        printf("%s, ", array[i]);
+    }
+    printf("\n");
 }

@@ -9,18 +9,7 @@
 
 #include <stdio.h>
 
-void dispaly(int a[10][10])
-{
-    int i, j;
-    for (i = 0; i < 3; i++)
-    {
-        for (j = 0; j < 3; j++)
-        {
-            printf("%d\t", a[i][j]);
-        }
-        printf("\n");
-    }
-}
+void dispaly(int a[10][10]);
 
 void main()
 {
@@ -56,4 +45,17 @@ void main()
 
     printf("Sparse matrix printing:\n");
     dispaly(b);
+}
+
+void dispaly(int a[10][10])
+{
+    int i, j;
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", a[i][j]);
+        }
+        printf("\n");
+    }
 }
