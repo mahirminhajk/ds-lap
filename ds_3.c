@@ -9,7 +9,7 @@
 
 #include <stdio.h>
 
-void dispaly(int a[10][10], int r, int c);
+void display(int a[10][10], int r, int c);
 
 void main()
 {
@@ -32,7 +32,7 @@ void main()
     }
 
     printf("matrix is :\n");
-    dispaly(a, r, c);
+    display(a, r, c);
 
     for (i = 0; i < r; i++)
     {
@@ -49,10 +49,10 @@ void main()
     }
 
     printf("Sparse matrix printing:\n");
-    dispaly(b, r, x);
+    display(b, r, x);
 }
 
-void dispaly(int a[10][10], int r, int c)
+void display(int a[10][10], int r, int c)
 {
     int i, j;
     for (i = 0; i < r; i++)
