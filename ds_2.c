@@ -44,7 +44,7 @@ void display(char str[10][30], int size)
     int i;
     for (i = 0; i < size; i++)
     {
-        printf("%s, ", array[i]);
+        printf("%s, ", str[i]);
     }
     printf("\n");
 }

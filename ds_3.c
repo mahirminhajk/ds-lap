@@ -9,29 +9,34 @@
 
 #include <stdio.h>
 
-void dispaly(int a[10][10]);
+void dispaly(int a[10][10], int r, int c);
 
 void main()
 {
-    int a[10][10], b[10][10], i, j, k = 0, value;
+    int a[10][10], b[10][10], i, j, k = 0, r, c, x = 0;
 
-    printf("Enter the total non-zero value in the sparse matrix:");
-    scanf("%d", &value);
+    printf("Enter the row and the column:");
+    scanf("%d %d", &r, &c);
 
     printf("Enter matrix Elements: \n");
-    for (i = 0; i < value; i++)
+    for (i = 0; i < r; i++)
     {
-        for (j = 0; j < value; j++)
+        for (j = 0; j < c; j++)
         {
             scanf("%d", &a[i][j]);
+            if (a[i][j] != 0)
+            {
+                x++;
+            }
         }
     }
-    printf("matrix is :\n");
-    dispaly(a);
 
-    for (i = 0; i < value; i++)
+    printf("matrix is :\n");
+    dispaly(a, r, c);
+
+    for (i = 0; i < r; i++)
     {
-        for (j = 0; j < value; j++)
+        for (j = 0; j < c; j++)
         {
             if (a[i][j] != 0)
             {
@@ -44,15 +49,15 @@ void main()
     }
 
     printf("Sparse matrix printing:\n");
-    dispaly(b);
+    dispaly(b, r, x);
 }
 
-void dispaly(int a[10][10])
+void dispaly(int a[10][10], int r, int c)
 {
     int i, j;
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < r; i++)
     {
-        for (j = 0; j < 3; j++)
+        for (j = 0; j < c; j++)
         {
             printf("%d\t", a[i][j]);
         }
