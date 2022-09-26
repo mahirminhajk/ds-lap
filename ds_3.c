@@ -1,11 +1,11 @@
 //*implement sparse matrix
-// 0   0  9
-// 8   0  0
-// 0   0  2
-
 // 0   1  2
 // 2   0  2
 // 9   8  2
+
+// 0   0  9
+// 8   0  0
+// 0   0  2
 
 #include <stdio.h>
 

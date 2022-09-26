@@ -7,7 +7,7 @@ void display(char str[10][30], int size);
 void main()
 {
     char str[10][30], temp[30];
-    int size, i, j, k;
+    int size, i, j;
 
     printf("Enter the size of the array: ");
     scanf("%d", &size);
@@ -24,7 +24,7 @@ void main()
     // sort array using the bubble sor algorithm
     for (i = 0; i < size; i++)
     {
-        for (j = 0; j < (k = size - 1 - i); j++)
+        for (j = 0; j < size - 1 - i; j++)
         {
             if (strcmp(str[j], str[j + 1]) > 0)
             {
