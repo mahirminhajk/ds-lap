@@ -49,7 +49,7 @@ void main()
     }
 
     printf("Sparse matrix printing:\n");
-    display(b, r, x);
+    display(b, 3, x);
 }
 
 void display(int a[10][10], int r, int c)
