@@ -12,19 +12,19 @@ void main()
     printf("Enter the order of the polynomial\n");
     scanf("%d", &N);
 
-    printf("Enter the value of x\n");
-    scanf("%f", &x);
+    // printf("Enter the value of x\n");
+    // scanf("%f", &x);
 
     printf("Enter %d coefficients\n", N + 1);
     for (i = 0; i <= N; i++)
     {
         scanf("%d", &a[i]);
     }
-    polySum = a[0];
-    for (i = 1; i <= N; i++)
-    {
-        polySum = polySum * x + a[i];
-    }
+    // polySum = a[0];
+    // for (i = 1; i <= N; i++)
+    // {
+    //     polySum = polySum * x + a[i];
+    // }
     power = N;
 
     printf("Given polynomial is: \n");
@@ -48,5 +48,5 @@ void main()
         }
         printf("%dx^%d  ", abs(a[i]), power--);
     }
-    printf("\nSum of the polynomial = %6.2f\n", polySum); /* displays the sum */
+    // printf("\nSum of the polynomial = %6.2f\n", polySum); /* displays the sum */
 }
