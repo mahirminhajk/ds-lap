@@ -1,7 +1,7 @@
 /* append two array*/
 
 #include <stdio.h>
-#include <string.h>
+
 
 void display(int a[], int size)
 {
