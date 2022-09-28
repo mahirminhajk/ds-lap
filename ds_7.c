@@ -30,7 +30,7 @@ void main()
     printf("Enter size of the array to append: \n");
     scanf("%d", &b_s);
 
-    printf("Enter the second array %d value\n", a_s);
+    printf("Enter the array %d value\n", b_s);
     for (i = 0; i < b_s; i++)
     {
         scanf("%d", &b[i]);
