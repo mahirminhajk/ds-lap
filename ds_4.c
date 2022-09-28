@@ -8,7 +8,6 @@
 void main()
 {
     int a[10], i, N, power;
-    float x, polySum;
     printf("Enter the order of the polynomial\n");
     scanf("%d", &N);
 
