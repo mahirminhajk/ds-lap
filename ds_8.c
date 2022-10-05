@@ -53,10 +53,10 @@ void main()
         ms++;
     }
 
-    printf("\nfirst array after soring: \n");
+    printf("\nfirst array after sorting: \n");
     sort(a, as);
 
-    printf("\nsecond array after soring: \n");
+    printf("\nsecond array after sorting: \n");
     sort(b, bs);
 
     printf("After merging and sorting:\n");
