@@ -1,7 +1,6 @@
 /*Implement insertion sort.*/
 
 #include <stdio.h>
-#include <math.h>
 
 void display(int arr[], int s)
 {
