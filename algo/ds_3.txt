@@ -1,12 +1,9 @@
-#Implement polynomial using array
+#Implement sparse matrix
 
 1.start
-2.read the order of the polynomial as n & cofficient of polynomial into a array as a
-3.set pow = n
-4.set i = 0
-5.if i <= N then goto 6, otherwise 10 
-6.if pow > 0 goto step ....
-7.if a[i] > 0 && i != 0 then print '+', other wise goto 8 
-8.if a[i] < 0 then print '-'
-9.print a[i], pow--
-10. stop
+2.read row, column, matrix
+3.when reading matrix if value == 0 then count+1:
+4.if count > ((row*column)/2 ) then goto 5, otherwise 6 
+5.the matrix is sparse matrix and goto step 7
+6.the matrix is not a sparse matrix
+7.stop

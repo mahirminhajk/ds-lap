@@ -1,0 +1,11 @@
+#Reverse a string using pointers
+
+1.start
+2.read a string as str
+3.set l = strlen(str) and create two pointer called begin_ptr and end_ptr and set it into str
+4.set end_ptr in to end of the stirng
+5.set i = 0
+6.if i > l/2 then goto 7, otherwise 9
+7.swap *end_ptr and *begin_ptr and set begin_ptr++, end_ptr--
+8.set i++ and goto 6
+9.stop
