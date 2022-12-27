@@ -1,0 +1,16 @@
+#Merge Two sorted array into one sorted array
+
+1.start
+2.read size of two array as 'as' and 'bs'
+3.read the two array using forloop
+4.when reading two array, merge the array into array 'c'
+5.sort the array using bubble algorithm  
+6.set i = 0
+7.if i < (size -1) then goto step 8, otherwise 13
+8.set j = 0
+9.if j < (size - i - 1) then goto step 10, otherwise 12
+10.if array[j] > array[j+1] then swap the two value
+11. set j++, go to 9
+12. set i++, goto 7
+13. print the array 'c'
+14. stop

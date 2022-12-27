@@ -1,0 +1,16 @@
+#Implement pattern matching algorithm
+
+1.start
+2.read string text and pattern  
+3.set tl = length of text and pl = length of pattern
+4.if pl > tl then the pattern not found goto step 14
+5.set i = 0
+6.if i < (tl - pl) then goto 7, otherwise 13
+7.set pos = k = i and j = 0
+8.if j < pl then goto 9, otherwise 12
+9.if pattern[j] == text[k] then goto step 10 , otherwise goto 8
+10. set j++ and goto step 8
+11. if(j == pl) then pattern found , goto 
+12. set i++ and goto step 6
+13. pattern not found
+14. stop

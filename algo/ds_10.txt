@@ -1,0 +1,14 @@
+#implement singly linked list of integers
+
+1.start
+2.Define a Node structure with two members value and next
+3.read the no.of elements in the LL
+4.using forloop read the value one by one 
+5.insert the value front of the LL
+6. Create a newNode iwth given value
+7. Check whether lsit is Empty (head == NULL)
+8. if if is Empty then, set newNode->next = NULL and head = newNode
+9. if its is not Empty then , set newNode→next= head adn head = newNode
+10. print the LL
+11. while (head != NULL) then print the head->value and set head = head -> next
+12.stop

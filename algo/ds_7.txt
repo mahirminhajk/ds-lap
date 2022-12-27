@@ -1,0 +1,9 @@
+#Append two array
+
+1.start
+2.read the size of the two array  as 'as','bs'
+3.read array 'a' using forloop and set c[i] = a[i]
+4.set cs = as
+5.read array 'b' using forloop and set c[cs] = b[i] and cs++
+6.print the 'c' array
+7.stop

@@ -1,0 +1,14 @@
+#Search an element in the array using binary Search
+
+1.start
+2.read the size of the array as 's', the array as 'a' and the value to search 
+3.set low = 0 and high = size - 1
+4.while low <= high then go to step 5, otherwise 10 
+5.set mid = low + (high - low) / 2
+6.if a[mid] == value then goto 11
+7.if a[mid] < value then set low = mid + 1 and goto 9, otherwise goto 8
+8.high = mid - 1
+9.go to step 4
+10.value not found and go to 12
+11.value found
+12.stop
