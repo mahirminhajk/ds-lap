@@ -1,11 +1,11 @@
 #sort a given list of string
 
 1.start
-2.read a no.of strings as size & 2d array of strings as str 
+2.read a no.of strings, as size & 2d array of strings, as str 
 3.set i = 0
 4.if i < size then goto 5, otherwise 10 
 5.set j = 0
-6.if i < (size-1-i) then goto 7, otherwise 9
+6.if j < (size-1-i) then goto 7, otherwise 9
 7.if strcmp(str[j], str[j+1] > 0) then swap str[j] and str[j+1]
 8.set j++ then go to step 6
 9.set i++ then go to step 4

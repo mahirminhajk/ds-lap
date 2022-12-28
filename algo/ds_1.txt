@@ -3,12 +3,12 @@
 
 1.start
 2.read a 2d array using nested forloop
-3.read the number to search as value
+3.read the number to search, as value
 4.set i = 0
 5.if i < row then goto 6, otherwise 11 
 6.set j = 0
 7.if i < column then goto 8, otherwise 10
-8.if a[i][j] == value then return we found the value
+8.if a[i][j] == value, then return 'we found the value'
 9.set j++ then go to step 7
 10.set i++ then go to step 5
 11.value not found

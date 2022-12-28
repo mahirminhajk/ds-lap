@@ -4,9 +4,10 @@
 2.read the order of the polynomial as n & cofficient of polynomial into a array as a
 3.set pow = n
 4.set i = 0
-5.if i <= N then goto 6, otherwise 10 
-6.if pow > 0 goto step ....
-7.if a[i] > 0 && i != 0 then print '+', other wise goto 8 
-8.if a[i] < 0 then print '-'
+5.if i <= n, then goto 6, otherwise 11 
+6.if pow > 0, goto step 11
+7.if a[i] > 0 && i != 0, then print '+' and goto 9, other wise goto 8 
+8.if a[i] < 0, then print '-' and goto step 9
 9.print a[i], pow--
-10. stop
+10.set i++ and goto 5
+11. stop
