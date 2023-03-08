@@ -1,0 +1,21 @@
+#implement Queue using Linked List
+
+1.start
+2.Define a Node structure with two members info and *link
+3.Define Node pointer front and rear and set tem to NULL
+4.in the mian function, display menu with list of operations insert(), delete(), display() and exit()
+5.insert() function
+    1. Create a new node pointer temp, read a value
+    2. set temp->info = item and temp->link = NULL;
+    3.if front == NULL, then set front = temp and rear = temp
+    4.otherwise, set rear->link = temp and rear = temp
+    
+6.delete() funciton
+    1. creat a new node pointer temp
+    2. if front == NULL, then queue is underflow, exit the funciton
+    3.otherwise, set temp = front, front= temp->link;
+    4. print temp->info and free(temp)
+7.display()
+    1. create a new node pointer ptr and set prt = front
+    2. if front == NULL, then queue is empty, exit the funciton
+    3. otherwise, pirnt prt->info and set ptr=ptr->link until ptr != NULL

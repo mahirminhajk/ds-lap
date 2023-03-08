@@ -1,0 +1,18 @@
+#implement Queue using array
+
+1.start
+2.Define a constant 'MAX' with specific value
+3.Create array with fixed size int Queue[MAX] and set front and rear = -1 
+4.in the mian function, display menu with list of operations insert(), delete(), display() and exit()
+5.insert() function
+    1. if rear == MAX - 1 then, Queue is overflow, exit the function
+    2. otherwise, if front == -1 then set front = 1, read a value, set rear + 1 and set queue[rear] = value
+    
+6.delete() funciton
+    1. if top == -1 or front > rear, then queue is underflow, exit the function
+    2. otherwise,  print queue[front] and set front + 1 
+7.display()
+    1. if front == -1 or front == rear, then queue is empty, exit the function
+    2. otherwise, set i= front
+    3. if i <= rear then print queue[i]
+    4. i++ then goto step 3

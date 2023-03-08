@@ -1,0 +1,12 @@
+#delete an elemetn from a singly linked list
+
+1.start
+2.Define a Node structure with two members value and next
+3.read the no.of elements in the LL
+4.using forloop read the value one by one 
+5.insert the value front of the LL
+6. call the deleteNode() function when we need to delete LL item form front
+6.deleteNode() function
+    1. if head == NULL, then LL is empty, exit the function
+    2. otherwise, create a newNode pointer temp and set temp = head
+    3.set head = temp->next and free(temp)

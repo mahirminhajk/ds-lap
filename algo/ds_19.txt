@@ -1,0 +1,10 @@
+#implement selection sort
+
+1. start
+2. read size of the array and the read items for the arry using forloop
+3. selection sort
+4. Select the first element of the array (index 0)
+5. Compare the selected element with all the other elements in the array.
+6.  In every comparision, if any element is found smaller than the selected element (for Ascending order), then both are swapped.
+7. Repeat the same procedure with element in the next position in the list till the entire array is sorted
+8. stop

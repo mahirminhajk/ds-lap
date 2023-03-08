@@ -1,0 +1,19 @@
+#Write a program implement stack using Linked List
+
+1.start
+2.Define a Node structure with two members info and *link
+3.Define a Node pointer top and set it to NULL
+4.in the mian function, display menu with list of operations push(), pop(), display() and exit()
+5.push() function
+    1. Create a new node pointer temp, read a value
+    2. set temp->info = value and temp->link = top;
+    3. set top = temp
+6.pop() funciton
+    1. creat a new node pointer temp
+    2. if top == NULL, then stack is empty, exit the function
+    3. otherwise, set temp = top and print temp->info
+    4. set top = top -> link and free(temp)
+7.display()
+    1. create a new node pointer ptr and set prt = top
+    2. if top == NULL, then stack is empty, exit the funciton
+    3. otherwise, pirnt prt->info and set ptr=ptr->link until ptr != NULL
