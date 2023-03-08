@@ -1,0 +1,16 @@
+#implement stack using array
+
+1.start
+2.Define a constant 'MAX' with specific value
+3.Create array with fixed size int stack[MAX] and set top = -1
+4.in the mian function, display menu with list of operations push(), pop(), display() and exit()
+5.push() function
+    if top == (MAX - 1), then stack is overflow, exit the function
+    otherwise read a value, set top + 1, and set stack[top] = value
+6.pop() funciton
+    if top == -1, then stack is underflow, exit the function
+    otherwise print stack[top], set stack[top]=0 and set top - 1 
+7.display()
+    if top == -1, then stack is empty, exit the function
+    otherwise set i = top, print stack[i] value and set i-1
+    repeat above step until i value become 0 
