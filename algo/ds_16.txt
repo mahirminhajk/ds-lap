@@ -1,0 +1,10 @@
+#Implement Addition of two polynomial 
+
+1.start
+2.read the order of the polynomials n1 and n2 & cofficient of polynomial into a array as A, B
+3.if n1 == n2, then goto step 4, otherwise stop(the order of polynomials is not equal)
+4.set i = 0
+5.if i < n2 then goto 6 otherwise goto step 7
+6. C[i] = A[i] + B[i] and then i++, goto step 5
+7. print the polynomial using array C
+8.stop
