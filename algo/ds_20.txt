@@ -1,9 +1,0 @@
-#implement insertion sort
-
-1. start
-2. read size of the array and the read items for the arry using forloop
-3. insertion sort
-4. Assume that first element in the list is in sorted portion and all the remaining elements are in unsorted portion.
-5. Take first element from the unsorted portion and insert that element into the sorted portion in the order specified.
-6. Repeat the above process until all the elements from the unsorted portion are moved into the sorted portion.
-7. stop
