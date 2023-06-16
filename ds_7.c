@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 
-
 void display(int a[], int size)
 {
     int i;

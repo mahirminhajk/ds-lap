@@ -1,46 +1,71 @@
-/*Implement insertion sort.*/
+// Evaluation of postfix expression.
 
 #include <stdio.h>
+#include <ctype.h>
+#include <math.h>
 
-void display(int arr[], int s)
-{
-    int i;
-    for (i = 0; i < s; i++)
-        printf("%d\t", arr[i]);
-    printf("\n");
-}
-
-void insertSort(int arr[], int s)
-{
-    int i, key, j;
-    for (i = 1; i < s; i++)
-    {
-        key = arr[i];
-        j = i - 1;
-
-        while (j >= 0 && arr[j] > key)
-        {
-            arr[j + 1] = arr[j];
-            j = j - 1;
-        }
-        arr[j + 1] = key;
-    }
-    display(arr, s);
-}
-
+int stack[50], top;
+void push(int);
+int pop();
 void main()
 {
-    int arr[20], i, s;
-    printf("Enter the size of the array: ");
-    scanf("%d", &s);
-
-    printf("enter the elements of the array: ");
-    for (i = 0; i < s; i++)
-        scanf("%d", &arr[i]);
-
-    printf("Array before sorting: ");
-    display(arr, s);
-
-    printf("Array after sorting: ");
-    insertSort(arr, s);
+    int i, x, a, b, c;
+    char str[50];
+    top = -1;
+    printf("Enter the postfix expression : ");
+    gets(str);
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        if (isalpha(str[i]))
+        {
+            printf("\n Enter value for %c = ", str[i]);
+            scanf("%d", &x);
+            push(x);
+        }
+        else if (isdigit(str[i]))
+        {
+            x = str[i] - '0';
+            push(x);
+        }
+        else
+        {
+            a = pop();
+            b = pop();
+            switch (str[i])
+            {
+            case '+':
+                c = b + a;
+                break;
+            case '-':
+                c = b - a;
+                break;
+            case '*':
+                c = b * a;
+                break;
+            case '/':
+                c = b / a;
+                break;
+            case '%':
+                c = b % a;
+                break;
+            case '^':
+                c = pow(b, a);
+                break;
+            }
+            push(c);
+        }
+    }
+    printf("The result of the postfix evaluation : %d", stack[top]);
+    getch();
+}
+void push(int x)
+{
+    top++;
+    stack[top] = x;
+}
+int pop()
+{
+    int x = stack[top];
+    top--;
+    return x;
 }

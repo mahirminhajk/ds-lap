@@ -1,44 +1,54 @@
-/*Traverse a binary search tree non recursively in inorder*/
+/*Implement selection sort.*/
 
 #include <stdio.h>
-#include <stdlib.h>
 
-struct node
+void swap(int *x, int *y)
 {
-    int data;
-    struct node *left;
-    struct node *right;
-};
-
-struct node *newNode(int data)
-{
-    struct node *temp = (struct node *)malloc(sizeof(struct node));
-    temp->data = data;
-    temp->left = NULL;
-    temp->right = NULL;
-
-    return (temp);
+    int temp = *x;
+    *x = *y;
+    *y = temp;
 }
 
-void printInorder(struct node *temp)
+void display(int arr[], int s)
 {
-    if (temp == NULL)
-        return;
-    printInorder(temp->left);
-    printf("%d ", temp->data);
-    printInorder(temp->right);
+    int i;
+    for (i = 0; i < s; i++)
+        printf("%d\t", arr[i]);
+    printf("\n");
+}
+
+void selectionSor(int arr[], int s)
+{
+    int i, j, key;
+
+    for (i = 0; i < s - 1; i++)
+    {
+        key = i;
+        for (j = i + 1; j < s; j++)
+            if (arr[j] < arr[key])
+                key = j;
+
+        if (key != i)
+        {
+            swap(&arr[key], &arr[i]);
+        }
+    }
+    display(arr, s);
 }
 
 void main()
 {
-    printf("test");
-    struct node *root = newNode(1);
+    int arr[20], i, s;
+    printf("Enter the size of the array: ");
+    scanf("%d", &s);
 
-    root->left = newNode(2);
-    root->right = newNode(3);
-    root->left->left = newNode(4);
-    root->left->right = newNode(5);
+    printf("enter the elements of the array: ");
+    for (i = 0; i < s; i++)
+        scanf("%d", &arr[i]);
 
-    printf("\nInorder traversal of binary tree is \n");
-    printInorder(root);
+    printf("Array before sorting: ");
+    display(arr, s);
+
+    printf("Array after sorting: ");
+    selectionSor(arr, s);
 }
