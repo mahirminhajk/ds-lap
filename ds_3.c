@@ -1,4 +1,4 @@
-/*implement sparse matrix*/
+// Implement sparse matrix.
 
 #include <stdio.h>
 

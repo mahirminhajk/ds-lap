@@ -1,4 +1,4 @@
-//*implement polynomial using arrays
+// Implement polynomial using arrays.
 
 // 2x^3 + x^2 + x
 

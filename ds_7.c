@@ -1,4 +1,4 @@
-/* append two array*/
+// Append two array.
 
 #include <stdio.h>
 

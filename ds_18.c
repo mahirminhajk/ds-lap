@@ -1,4 +1,4 @@
-/*Implement selection sort.*/
+// Implement selection sort.
 
 #include <stdio.h>
 

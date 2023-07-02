@@ -1,4 +1,4 @@
-/* Merge two sorted array into one sorted array*/
+// Merge two sorted array into one sorted array.
 
 #include <stdio.h>
 
