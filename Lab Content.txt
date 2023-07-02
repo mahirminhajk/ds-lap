@@ -1,0 +1,20 @@
+1. Searching for elements in a 2D array.
+2. Sort a given list of strings.
+3. Implement sparse matrix.
+4. Implement polynomial using arrays.
+5. Reverse a string using pointers.
+6. Implement Pattern matching algorithm.
+7. Append 2 arrays.
+8. Merge two sorted arrays into one sorted array.
+9. Search an element in the array using binary search.
+10. Implement singly linked list of integers.
+11. Implement stack using array.
+12. Implement queue using array.
+13. Implement stack using linked list.
+14. Implement queue using linked list.
+15. Delete an element from a singly linked list.
+16. Addition of two polynomial.
+17. Implement bubble sort.
+18. Implement selection sort.
+19. Implement insertion sort.
+20. Evaluation of postfix expression.

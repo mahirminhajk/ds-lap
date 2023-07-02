@@ -1,27 +1,26 @@
 // Implement queue using array.
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #define MAX 5
 
-int queue[MAX];
-int rear = -1;
-int front = -1;
+int queue[MAX], rear = -1, front = -1;
 
-main(){
+main()
+{
     int choice;
-
-    while(1)
+    // clrscr();
+    while (1)
     {
         printf("\n 1.Insert\n 2.Delete\n 3.Display\n 4.Quit\n Enter the choice: ");
-        scanf("%d",&choice);
+        scanf("%d", &choice);
         switch (choice)
         {
         case 1:
             insert();
             break;
         case 2:
-            delete();
+            delete ();
             break;
         case 3:
             display();
@@ -38,14 +37,14 @@ main(){
 insert()
 {
     int item;
-    if(rear==MAX-1)
+    if (rear == MAX - 1)
     {
         printf("Queue overflow.\n");
     }
     else
     {
-        if(front==-1)
-        front = 0;
+        if (front == -1)
+            front = 0;
         {
             printf("Put the element for adding queue: ");
             scanf("%d", &item);
@@ -56,9 +55,9 @@ insert()
     return;
 }
 
-delete()
+delete ()
 {
-    if(front==-1 || front>rear)
+    if (front == -1 || front > rear)
     {
         printf("Queue underflow.\n");
         return;
@@ -66,10 +65,10 @@ delete()
     else
     {
         printf("Element deleted from queue is %d.\n", queue[front]);
-        front = front+1;
-        if(front>rear)
+        front = front + 1;
+        if (front > rear)
         {
-            front,rear = -1; 
+            front, rear = -1;
         }
     }
     return;
@@ -78,16 +77,15 @@ delete()
 display()
 {
     int i;
-    if(front==-1)
+    if (front == -1)
     {
         printf("Queue is empty.\n");
     }
     else
     {
         printf("Queue is: ");
-        for(i=front; i<=rear; i++)
-        printf("%d\t",queue[i]);
+        for (i = front; i <= rear; i++)
+            printf("%d\t", queue[i]);
     }
     return;
 }
-

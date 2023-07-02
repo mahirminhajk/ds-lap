@@ -1,4 +1,4 @@
-// Write a c-program implement stack using linked list.
+// implement stack using linked list.
 
 #include<stdio.h>
 #include<malloc.h>

@@ -32,7 +32,7 @@ void poly (int N, int a[])
 void main()
 {
     int a[10], b[10], c[10], i, N1, N2;
-    
+    // clrscr();
     printf("\nEnter  the order of first polynomial: ");
     scanf("%d", &N1);
 

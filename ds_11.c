@@ -13,7 +13,7 @@ void display();
 void main()
 {
     int choice;
-
+    // clrscr();
     while(1)
     {
         printf("\n1 Push\n2 Pop\n3 Display\n4 Quit\nEnter your choice: ");
