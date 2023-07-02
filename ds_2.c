@@ -8,7 +8,7 @@ void main()
 {
     char str[10][30], temp[30];
     int size, i, j;
-
+    // clrscr()
     printf("Enter the size of the array: ");
     scanf("%d", &size);
 

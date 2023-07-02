@@ -33,7 +33,7 @@ void sort(int a[], int s)
 void main()
 {
     int a[20], b[20], m[40], i, as, bs, ms;
-
+    // clrscr();
     printf("Enter the size of first array: ");
     scanf("%d", &as);
     printf("\nEnter the elements of first array: ");

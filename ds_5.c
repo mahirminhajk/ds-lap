@@ -20,7 +20,7 @@ void main()
 void reString(char *str)
 {
     int l, i;
-    char *begin_ptr, *end_ptr, ch;
+    char *begin_ptr, *end_ptr, temp;
 
     l = strlen(str);
     begin_ptr = str;
@@ -33,9 +33,9 @@ void reString(char *str)
 
     for (i = 0; i < l / 2; i++)
     {
-        ch = *end_ptr;
+        temp = *end_ptr;
         *end_ptr = *begin_ptr;
-        *begin_ptr = ch;
+        *begin_ptr = temp;
         begin_ptr++;
         end_ptr--;
     }
