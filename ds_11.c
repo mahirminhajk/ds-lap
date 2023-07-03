@@ -42,7 +42,7 @@ void push()
 {
     int item;
     if(top == (MAX -1))
-    printf("Stack overflow.");
+        printf("Stack overflow.");
     else
     {
         printf("Enter the item to push: ");
@@ -74,7 +74,7 @@ void display()
     {
         printf("Stack elements: \n");
         for(i = top; i >= 0; i--)
-        printf("%d\n",stack[i]);
+            printf("%d\n",stack[i]);
     }
     return;
 }

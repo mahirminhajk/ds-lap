@@ -17,26 +17,47 @@ void main()
     printf("Reverse of the string: %s\n", str);
 }
 
-void reString(char *str)
-{
-    int l, i;
-    char *begin_ptr, *end_ptr, temp;
+// void reString(char *str)
+// {
+//     int l, i;
+//     char *begin_ptr, *end_ptr, temp;
 
-    l = strlen(str);
-    begin_ptr = str;
-    end_ptr = str;
+//     l = strlen(str);
+//     begin_ptr = str;
+//     end_ptr = str;
 
-    for (i = 0; i < l - 1; i++)
-    { // set end_ptr in to end of the stirng
-        end_ptr++;
-    }
+//     for (i = 0; i < l - 1; i++)
+//     { // set end_ptr in to end of the stirng
+//         end_ptr++;
+//     }
 
-    for (i = 0; i < l / 2; i++)
-    {
-        temp = *end_ptr;
-        *end_ptr = *begin_ptr;
-        *begin_ptr = temp;
-        begin_ptr++;
-        end_ptr--;
+//     for (i = 0; i < l / 2; i++)
+//     {
+//         temp = *end_ptr;
+//         *end_ptr = *begin_ptr;
+//         *begin_ptr = temp;
+//         begin_ptr++;
+//         end_ptr--;
+//     }
+// }
+
+
+void restring(char *str){
+    int i;
+    char *start, *end, temp;
+    
+    start = str;
+    end = str;
+
+    while(*end != '\0') end++;
+
+    end--;
+
+     while(start < end){
+        temp = *start;
+        *start = *end;
+        *end = *start;
+        start++;
+        end--;
     }
 }

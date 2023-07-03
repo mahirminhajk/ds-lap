@@ -32,7 +32,7 @@ void sort(int a[], int s)
 
 void main()
 {
-    int a[20], b[20], m[40], i, as, bs, ms;
+    int a[20], b[20], c[40], i, as, bs, cs;
     // clrscr();
     printf("Enter the size of first array: ");
     scanf("%d", &as);
@@ -40,17 +40,17 @@ void main()
     for (i = 0; i < as; i++)
     {
         scanf("%d", &a[i]);
-        m[i] = a[i];
+        c[i] = a[i];
     }
-    ms = as;
+    cs = as;
     printf("Enter the size of second array: ");
     scanf("%d", &bs);
     printf("\nEnter the elements of second array: ");
     for (i = 0; i < bs; i++)
     {
         scanf("%d", &b[i]);
-        m[ms] = b[i];
-        ms++;
+        c[cs] = b[i];
+        cs++;
     }
 
     printf("\nfirst array after sorting: \n");
@@ -60,5 +60,5 @@ void main()
     sort(b, bs);
 
     printf("After merging and sorting:\n");
-    sort(m, ms);
+    sort(c, cs);
 }
