@@ -22,7 +22,7 @@ void main()
     printf("The unsorted array: ");
     display(str, size);
 
-    // sort array using the bubble sor algorithm
+    // sort array using the bubble sort algorithm
     for (i = 0; i < size; i++)
     {
         for (j = 0; j < size - 1 - i; j++)

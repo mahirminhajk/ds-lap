@@ -17,46 +17,51 @@ void main()
     printf("Reverse of the string: %s\n", str);
 }
 
-void restring(char *str){
-    int i;
-    char *start, *end, temp;
-    
-    start = str;
-    end = str;
+void restring(char *str)
+{
+    int l, i;
+    char *begin_ptr, *end_ptr, temp;
 
-    while(*end != '\0') end++;
+    l = strlen(str);
+    begin_ptr = str;
+    end_ptr = str;
 
-    end--;
+    for (i = 0; i < l - 1; i++)
+    { // set end_ptr in to end of the stirng
+        end_ptr++;
+    }
 
-     while(start < end){
-        temp = *start;
-        *start = *end;
-        *end = *start;
-        start++;
-        end--;
+    for (i = 0; i < l / 2; i++)
+    {
+        temp = *end_ptr;
+        *end_ptr = *begin_ptr;
+        *begin_ptr = temp;
+        begin_ptr++;
+        end_ptr--;
     }
 }
 
-// void reString(char *str)
+
+
+// void restring(char *str)
 // {
-//     int l, i;
-//     char *begin_ptr, *end_ptr, temp;
+//     int i;
+//     char *start, *end, temp;
 
-//     l = strlen(str);
-//     begin_ptr = str;
-//     end_ptr = str;
+//     start = str;
+//     end = str;
 
-//     for (i = 0; i < l - 1; i++)
-//     { // set end_ptr in to end of the stirng
-//         end_ptr++;
-//     }
+//     while (*end != '\0')
+//         end++;
 
-//     for (i = 0; i < l / 2; i++)
+//     end--;
+
+//     while (start < end)
 //     {
-//         temp = *end_ptr;
-//         *end_ptr = *begin_ptr;
-//         *begin_ptr = temp;
-//         begin_ptr++;
-//         end_ptr--;
+//         temp = *start;
+//         *start = *end;
+//         *end = *start;
+//         start++;
+//         end--;
 //     }
 // }
