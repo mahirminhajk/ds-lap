@@ -11,6 +11,7 @@ struct linked_list
 };
 typedef struct linked_list node;
 node * top = NULL;
+
 void push();
 void pop();
 void display();
@@ -45,11 +46,11 @@ void main()
 void push()
 {
     node * temp;
-    int pushed_item;
+    int data;
     temp = (node*) malloc(sizeof(node));
     printf("Input new value: \n");
-    scanf("%d",&pushed_item);
-    temp->info = pushed_item;
+    scanf("%d",&data);
+    temp->info = data;
     temp->link = top;
     top = temp;
 }

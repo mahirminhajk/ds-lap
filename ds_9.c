@@ -3,37 +3,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// int bs(int a[], int value, int low, int high)
-// {
-//     while(low <= high)
-//     {
-//         int mid = low + (high - low) / 2;
-//         if(a[mid] == value)
-//         {
-//             return mid;
-//         }
-//         if(a[mid] < value)
-//         {
-//             low = mid + 1;
-//         }else{
-//             high = mid - 1;
-//         }
-//     }
-//     return -1;
-// }
-
-
-int bs(int a[], int left, int right, int value){
-    while(left <= right){
-        int mid = left + (right - left) / 2;
-    
-        if(a[mid] == value) return mid;
-        
-        if(a[mid] < value) left = mid + 1; 
-        else right = mid - 1;
+int bs(int a[], int value, int lleft, int right)
+{
+    while(lleft <= right)
+    {
+        int mid = lleft + (right - lleft) / 2;
+        if(a[mid] == value)
+        {
+            return mid;
+        }
+        if(a[mid] < value)
+        {
+            lleft = mid + 1;
+        }else{
+            right = mid - 1;
+        }
     }
     return -1;
 }
+
+
+// int bs(int a[], int left, int right, int value){
+//     while(left <= right){
+//         int mid = left + (right - left) / 2;
+    
+//         if(a[mid] == value) return mid;
+        
+//         if(a[mid] < value) left = mid + 1; 
+//         else right = mid - 1;
+//     }
+//     return -1;
+// }
 
 void main()
 {

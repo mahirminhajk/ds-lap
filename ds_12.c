@@ -14,8 +14,7 @@ void main()
     // clrscr();
     do
     {
-        printf("\nEnter the option: ");
-        printf("\n1.Insert 2.Remove 3.Display 4.Exit:\n");
+        printf("\n1.Insert\n2.Remove\n3.Display\n4.Exit:\nEnter the option: ");
         scanf("%d", &op);
         switch (op)
         {
