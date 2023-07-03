@@ -1,4 +1,4 @@
-// Write a c-program implement queue using linked list.
+// Implement queue using linked list.
 
 #include<stdio.h>
 #include<malloc.h>
@@ -8,6 +8,7 @@ struct linked_list
     int info;
     struct linked_list *link;
 };
+
 typedef struct linked_list node;
 node * front = NULL;
 node * rear = NULL;
@@ -19,7 +20,7 @@ void display();
 main()
 {
     int choice;
-    
+    // clrscr();
     while(1)
     {
         printf("\n 1.INSERT\n 2.DELETE\n 3.DISPLAY\n 4.QUIT\n Enter your choice: ");

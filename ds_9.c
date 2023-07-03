@@ -3,37 +3,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int bs(int a[], int value, int lleft, int right)
+int bs(int a[], int value, int left, int right)
 {
-    while(lleft <= right)
+    while(left <= right)
     {
-        int mid = lleft + (right - lleft) / 2;
+        int mid = left + (right - left) / 2;
         if(a[mid] == value)
         {
             return mid;
         }
         if(a[mid] < value)
         {
-            lleft = mid + 1;
+            left = mid + 1;
         }else{
             right = mid - 1;
         }
     }
     return -1;
 }
-
-
-// int bs(int a[], int left, int right, int value){
-//     while(left <= right){
-//         int mid = left + (right - left) / 2;
-    
-//         if(a[mid] == value) return mid;
-        
-//         if(a[mid] < value) left = mid + 1; 
-//         else right = mid - 1;
-//     }
-//     return -1;
-// }
 
 void main()
 {
@@ -56,3 +43,15 @@ void main()
     result == -1 ? printf("Element not found") : printf("Element is found at index %d", result);
     getch();
 }
+
+// int bs(int a[], int left, int right, int value){
+//     while(left <= right){
+//         int mid = left + (right - left) / 2;
+    
+//         if(a[mid] == value) return mid;
+        
+//         if(a[mid] < value) left = mid + 1; 
+//         else right = mid - 1;
+//     }
+//     return -1;
+// }
