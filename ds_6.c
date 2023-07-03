@@ -1,4 +1,4 @@
-/*Implement Pattern matching algorithm*/
+// Implement Pattern matching algorithm.
 
 #include <stdio.h>
 #include <string.h>
@@ -9,7 +9,7 @@ void main()
 {
     char text[100], pattern[100];
     int pos;
-
+    // clrscr();
     printf("Enter some text:\n");
     gets(text);
 

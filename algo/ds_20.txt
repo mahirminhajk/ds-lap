@@ -1,0 +1,12 @@
+# Evaluation of postfix expression
+
+1. start
+2. create a array of int called stack and int top = -1
+3. read postfix expression & store to str[50]
+4. using forloop run through every item in the str array
+5. if the item is alpha(letter) read a number value & push to the stack
+6. else if the item is digit(number) push to the stack
+7. else (if item not letter and number) pop last two item from stack & store in a & b
+8. c=b'item' a; & push c to the stack
+9. after the forloop done, print the stack top value
+10. stop

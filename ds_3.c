@@ -1,11 +1,11 @@
-/*implement sparse matrix*/
+// Implement sparse matrix.
 
 #include <stdio.h>
 
 void main()
 {
     int a[10][10], r, c, i, j, count = 0;
-
+    // clrscr();
     printf("Enter the row and column: \n");
     scanf("%d %d", &r, &c);
 

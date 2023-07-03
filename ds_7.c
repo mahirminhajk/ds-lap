@@ -1,7 +1,6 @@
-/* append two array*/
+// Append two array.
 
 #include <stdio.h>
-
 
 void display(int a[], int size)
 {
@@ -16,9 +15,11 @@ void display(int a[], int size)
 void main()
 {
     int a[10], b[10], c[20], a_s, b_s, i, c_s;
-
+    // clrscr();
+    
     printf("Enter size of the array: \n");
     scanf("%d", &a_s);
+
     printf("Enter the first array %d value\n", a_s);
     for (i = 0; i < a_s; i++)
     {

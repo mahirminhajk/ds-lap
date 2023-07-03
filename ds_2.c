@@ -1,4 +1,5 @@
-/*sort a given list of strings*/
+// Sort a given list of strings.
+
 #include <stdio.h>
 #include <string.h>
 
@@ -8,7 +9,7 @@ void main()
 {
     char str[10][30], temp[30];
     int size, i, j;
-
+    // clrscr()
     printf("Enter the size of the array: ");
     scanf("%d", &size);
 

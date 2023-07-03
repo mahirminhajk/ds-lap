@@ -1,13 +1,7 @@
-/*Implement selection sort.*/
+// Implement insertion sort.
 
 #include <stdio.h>
-
-void swap(int *x, int *y)
-{
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-}
+#include <math.h>
 
 void display(int arr[], int s)
 {
@@ -17,21 +11,20 @@ void display(int arr[], int s)
     printf("\n");
 }
 
-void selectionSor(int arr[], int s)
+void insertSort(int arr[], int s)
 {
-    int i, j, key;
-
-    for (i = 0; i < s - 1; i++)
+    int i, key, j;
+    for (i = 1; i < s; i++)
     {
-        key = i;
-        for (j = i + 1; j < s; j++)
-            if (arr[j] < arr[key])
-                key = j;
+        key = arr[i];
+        j = i - 1;
 
-        if (key != i)
+        while (j >= 0 && arr[j] > key)
         {
-            swap(&arr[key], &arr[i]);
+            arr[j + 1] = arr[j];
+            j = j - 1;
         }
+        arr[j + 1] = key;
     }
     display(arr, s);
 }
@@ -39,10 +32,11 @@ void selectionSor(int arr[], int s)
 void main()
 {
     int arr[20], i, s;
+
     printf("Enter the size of the array: ");
     scanf("%d", &s);
 
-    printf("enter the elements of the array: ");
+    printf("Enter the elements of the array: \n");
     for (i = 0; i < s; i++)
         scanf("%d", &arr[i]);
 
@@ -50,5 +44,6 @@ void main()
     display(arr, s);
 
     printf("Array after sorting: ");
-    selectionSor(arr, s);
+    insertSort(arr, s);
+    getch();
 }

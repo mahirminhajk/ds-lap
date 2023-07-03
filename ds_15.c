@@ -1,4 +1,4 @@
-/*delete an element from a singly linked list*/
+// Delete an element from a singly linked list.
 
 #include <stdio.h>
 #include <stdlib.h>
