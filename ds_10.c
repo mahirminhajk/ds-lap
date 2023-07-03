@@ -40,11 +40,10 @@ void main()
     scanf("%d", &count);
     for (i = 0; i < count; i++)
     {
-        printf("Enter %dth elements: ", i);
+        printf("Enter %dth elements: \n", i);
         scanf("%d", &val);
         insertfront(&head, val);
     }
-    printf("Linked List: ");
     printList(head);
     getch();
 }
