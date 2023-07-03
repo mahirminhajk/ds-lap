@@ -14,34 +14,34 @@ void display(int a[], int size)
 
 void main()
 {
-    int a[10], b[10], c[20], a_s, b_s, i, c_s;
+    int a[10], b[10], c[20], as, bs, i, cs;
     // clrscr();
     
     printf("Enter size of the array: \n");
-    scanf("%d", &a_s);
+    scanf("%d", &as);
 
-    printf("Enter the first array %d value\n", a_s);
-    for (i = 0; i < a_s; i++)
+    printf("Enter the first array %d value\n", as);
+    for (i = 0; i < as; i++)
     {
         scanf("%d", &a[i]);
         c[i] = a[i];
     }
-    c_s = a_s;
+    cs = as;
 
     printf("Enter size of the array to append: \n");
-    scanf("%d", &b_s);
+    scanf("%d", &bs);
 
-    printf("Enter the array %d value\n", b_s);
-    for (i = 0; i < b_s; i++)
+    printf("Enter the array %d value\n", bs);
+    for (i = 0; i < bs; i++)
     {
         scanf("%d", &b[i]);
-        c[c_s] = b[i];
-        c_s++;
+        c[cs] = b[i];
+        cs++;
     }
 
     printf("array before append\n");
-    display(a, a_s);
+    display(a, as);
 
     printf("array after append: \n");
-    display(c, c_s);
+    display(c, cs);
 }

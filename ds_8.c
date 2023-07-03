@@ -36,7 +36,7 @@ void main()
     // clrscr();
     printf("Enter the size of first array: ");
     scanf("%d", &as);
-    printf("\nEnter the elements of first array: ");
+    printf("\nEnter the elements of first array: \n");
     for (i = 0; i < as; i++)
     {
         scanf("%d", &a[i]);
@@ -45,7 +45,7 @@ void main()
     cs = as;
     printf("Enter the size of second array: ");
     scanf("%d", &bs);
-    printf("\nEnter the elements of second array: ");
+    printf("\nEnter the elements of second array: \n");
     for (i = 0; i < bs; i++)
     {
         scanf("%d", &b[i]);
@@ -59,6 +59,6 @@ void main()
     printf("\nsecond array after sorting: \n");
     sort(b, bs);
 
-    printf("After merging and sorting:\n");
+    printf("\nAfter merging and sorting:\n");
     sort(c, cs);
 }
